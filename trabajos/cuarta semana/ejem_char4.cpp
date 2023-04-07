@@ -10,19 +10,25 @@ int main(){
     int x=0;
     cout<<"Ingrese numeros: "<<endl;
     cin>>num;
-int m;
+
+
+int k;
 
     for(int c=0;c<num.length();c++){
 
-        int k;
+        
 
         k=num.at(c);
+        
 
-        x=k+x;
+
+        x+=(k-'0');
+        cout<<x<<endl;
 
 
     }
-    cout<<x<<endl;
+    //cout<<num<<endl;
+    //cout<<x<<endl;
 
 
 
