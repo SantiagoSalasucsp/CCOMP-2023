@@ -7,9 +7,15 @@ class Account {
 
     public:
         
+
+        Account(){
+            dinero=0;
+            name="";
+        }
         //Constructor
-        explicit Account( std::string Nombre){
+        explicit Account( std::string Nombre, int ed){
             name=Nombre;
+            dinero=ed;
         }
         
         void setName(std::string NOmbre) {
