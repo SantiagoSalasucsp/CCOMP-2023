@@ -1,5 +1,20 @@
 #include <iostream>
 using namespace std;
+
+bool Palindromo(int num){
+  int original=num;
+  int inverso = 0;
+  while( num>0){
+    inverso =(inverso *10) + (num %10);
+    num/=10;
+  }
+  if (original==inverso)
+    return 1;
+  else
+    return 0;
+  
+}
+
 int main() {
 int x;
 int a;
@@ -12,7 +27,7 @@ int z;
 int y;
 int e;
 
-for(e=100;e<1000;e++)
+/*for(e=100;e<1000;e++)
   {for(y=100;y<1000;y++)
     {z=y*e;
      x=z/100000;
@@ -24,5 +39,18 @@ for(e=100;e<1000;e++)
     if ((x==d)&&(a==k)&&(b==f))
       {cout<<z<<endl;}
     }
+*/
+
+    int maximo=0;
+    for(int x=100; x<1000;x++){
+      for(int y=100;y<1000;y++){
+        int u=x*y;
+      if(Palindromo(u)){
+        if(u>=maximo)
+          maximo=u;
+      }}
+
+    }
+    cout<<"El palindromo mas grande es: " <<maximo<<endl;
 
 }
