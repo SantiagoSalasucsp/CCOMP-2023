@@ -29,9 +29,9 @@ int main(){
 
     //primero[5]=1000;
 
-   /* primero.push_back(10);
+    primero.push_back(10);
     primero.push_back(20);
-    primero.push_back(30);*/
+    primero.push_back(30);
 
     PrintVector(primero);
 
