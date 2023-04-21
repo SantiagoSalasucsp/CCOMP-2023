@@ -226,8 +226,8 @@ cout<<"lo que esta adentro del vector es: "<<endl;
 
 PrintVector(arreglo);
 
-cout<<endl;
 
-cout<<cha1+cha2+cha3+cha4<<endl;
+
+//5537376230
 
 }
