@@ -17,7 +17,7 @@ void Print(int arreglo[], int tam){
     cout<<"]";
 }
 
-void incert(int arr[], int size, int num){
+/*void incert(int arr[], int size, int num){
     int array[size+1];
     for(int y=0;y<size;y++){
         array[y]=arr[y];
@@ -26,6 +26,7 @@ void incert(int arr[], int size, int num){
     Print(array,size+1);
     arr=array;
 }
+*/
 
 bool Palindromo(int num){
   int original=num;
