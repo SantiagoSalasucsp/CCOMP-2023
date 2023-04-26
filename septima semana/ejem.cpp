@@ -81,13 +81,13 @@ void Cambio(int arr[], int size){
 
 
 
-void invertirRec(int arr[], int inicio, int fin) {
-    if (inicio < fin) {
-        int temp = arr[inicio];
-        arr[inicio] = arr[fin];
-        arr[fin] = temp;
+void invertirRec(int arr[], int ini, int fin) {
+    if (ini < fin) {
+        int res = arr[ini];
+        arr[ini] = arr[fin];
+        arr[fin] = res;
 
-        invertirRec(arr, inicio+1, fin-1);
+        invertirRec(arr, ini+1, fin-1);
     }
 }
 
@@ -105,15 +105,15 @@ bool PalindromoRec(int arr[], int size){
 
 
 int main(){
-    const static int x=3;
-    int array[]={1,2,3};
+    const static int x=6;
+    int array[]={1,2,3,4,5,6};
     //bool x=EsPaliRec(array,x);
     //CambioRec(array,x);
     //cout<<x<<endl; 
     //Print(array,x); 
 
-    invertirRec(array,0,2);
-    Print(array,3);
+    invertirRec(array,0,5);
+    Print(array,6);
  
 
 
