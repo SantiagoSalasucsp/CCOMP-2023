@@ -78,33 +78,26 @@ void Cambio(int arr[], int size){
     }
 }
 
-bool CambioRec(int arr[],int size){
-    int y=0;
-    if(y==size){
-        int res=arr[y];
-        cout<<"EL actual de res: "<<res<<endl;
-        int x=size-y-1;
-        cout<<"x: "<<x<<endl;
-        arr[y]=arr[x];
-        cout<<"El valor de y es: "<<arr[y]<<endl;
-        arr[x]=res;
-        cout<<"El valor ahora es: "<<arr[y]<<endl;
-    }
-    else
-        Cambio(arr,size-1);
-}
+
 
 
 void invertirRec(int arr[], int inicio, int fin) {
     if (inicio < fin) {
-        // Intercambiar los elementos
         int temp = arr[inicio];
         arr[inicio] = arr[fin];
         arr[fin] = temp;
 
-        // Llamar a la función recursivamente con los elementos restantes
         invertirRec(arr, inicio+1, fin-1);
     }
+}
+
+
+bool PalindromoRec(int arr[], int size){
+    int inico=0;
+    int fin=size-1;
+    invertirRec(arr,inico, fin);
+    EsPali(arr,size);
+
 }
 
 
@@ -122,7 +115,6 @@ int main(){
     invertirRec(array,0,2);
     Print(array,3);
  
-
 
 
 
