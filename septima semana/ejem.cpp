@@ -2,6 +2,19 @@
 
 using namespace std;
 
+
+bool esPalRc( const int arr[], int ini, int fin){
+    if(ini>=fin)
+        return true;
+    if(arr[ini] !=arr[fin])
+        return 0;
+    return esPalRc(arr, ini+1, fin-1)
+}
+
+
+
+
+
 void almacenar_elementos(int arr[], int tam, int* x, int i) {
     if (i < tam) {
         *x++ = arr[i];
