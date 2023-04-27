@@ -43,10 +43,10 @@ bool Palindromo(int num){
 bool EsPalindromoRec(int arreglo[], int tam){
     int array(tam);
     int numero=0;
-    int tama=tam;
+    
     for(int y=0; y<tam;y++){
         int def=tam-y;
-        array[tama-y]=arreglo[y];
+        array[def]=arreglo[y];
         
     }
     return 1;

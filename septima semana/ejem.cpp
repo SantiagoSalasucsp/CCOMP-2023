@@ -2,25 +2,41 @@
 
 using namespace std;
 
-
+// palindromo en interativo y recuersivo
 bool esPalRc( const int arr[], int ini, int fin){
     if(ini>=fin)
         return true;
     if(arr[ini] !=arr[fin])
         return 0;
-    return esPalRc(arr, ini+1, fin-1)
+    return esPalRc(arr, ini+1, fin-1);
+}
+
+bool esPaldi(const int arr[], const int tam){
+    int ini=0;
+    int fin =  tam-1;
+    while(ini<fin){
+        if(arr[ini++]!=arr[fin--])
+            return false;
+    
+    }
+    return true;
+
 }
 
 
 
 
 
-void almacenar_elementos(int arr[], int tam, int* x, int i) {
+
+
+
+/*void almacenar_elementos(int arr[], int tam, int* x, int i) {
     if (i < tam) {
         *x++ = arr[i];
         almacenar_elementos(arr, tam, x, i+1);
     }
 }
+*/
 
 void Print(int arreglo[], int tam){
     cout<<"[";
