@@ -16,7 +16,7 @@ bool Palindromo(int*ini, int tam){
             return false;
         }
     ini++;
-    fin++;
+    fin--;
     }
     return true;
 }
@@ -44,10 +44,10 @@ void intercambio(int &a, int &b){
 }
 
 void invertirRec(int*ini, int*fin){
-    if(ini>=fin){
+    if(ini>fin){
         return;
     }
-    intercambio(*ini, *fin);
+    intercambio(*ini, *(fin-1));
     invertirRec(++ini,--fin);
 }
 
@@ -83,7 +83,9 @@ int main(){
 
     int arr[]={1,2,3,4,5};
     int tam=sizeof(arr)/sizeof(arr[0]);
-    intercambio(arr,5);
+    int*fin=(arr+5);
+    int*ini=&arr[0];
+    cout<<Palindromo(ini,5);
     Print(arr,tam);
     //int*fin=arr+tam-1;
 
