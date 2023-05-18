@@ -15,6 +15,7 @@ Time::Time(int horas, int minutos, int segundos){
 }
 
 
+
 void Time::setTime(int horas,int minutos, int segundos){
 
     if((horas>=0 && horas<=24) && (minutos>=0 && segundos<=60) && (segundos>=0 && segundos<=60)){
@@ -79,5 +80,8 @@ void Time::setminutos(int minutos) {
  unsigned int Time::gethoras() const {return horas;}
  unsigned Time::getminutos() const {return minutos;}
  unsigned Time::getsegundos() const {return segundos;}
+
+
+
 
 
