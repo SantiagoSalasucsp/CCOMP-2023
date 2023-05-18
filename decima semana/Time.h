@@ -8,18 +8,21 @@ class Time {
     public:
 
         explicit Time(int=0, int=0, int=0);
+        ~Time();
 
         void setTime(int, int, int);
         std::string toUniversalString() const;
         std::string toStandardString() const;
 
-        void setHour(int); 
-        void setMinute(int); 
-        void setSecond(int); 
+        void sethoras(int); 
+        void setminutos(int); 
+        void setsegundos(int); 
 
         unsigned int gethoras() const; 
         unsigned int getminutos() const; 
         unsigned int getsegundos() const;
+
+
 
 
     private:

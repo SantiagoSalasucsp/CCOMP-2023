@@ -51,8 +51,33 @@ void Time::sethoras(int horas) {
     this->horas = horas;
     }
     else {
-        throw invalid_argument("hour must be 0-23");
+        throw invalid_argument("hour debe estar en 0-23");
     }
  } 
+
+void Time::setminutos(int minutos) {
+    if (minutos >= 0 && minutos < 60) {
+    this->minutos = minutos;
+    }
+    else {
+        throw invalid_argument("minutos deben estar en 0-59");
+    }
+ } 
+
+
+ void Time::setsegundos(int segundos) {
+    if (segundos >= 0 && segundos < 60) {
+    this->segundos = segundos;
+    }
+    else {
+        throw invalid_argument("segundos deben estar en 0-59");
+    }
+ }
+
+
+
+ unsigned int Time::gethoras() const {return horas;}
+ unsigned Time::getminutos() const {return minutos;}
+ unsigned Time::getsegundos() const {return segundos;}
 
 
