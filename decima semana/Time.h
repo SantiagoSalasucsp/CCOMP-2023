@@ -13,10 +13,18 @@ class Time {
         std::string toUniversalString() const;
         std::string toStandardString() const;
 
+        void setHour(int); 
+        void setMinute(int); 
+        void setSecond(int); 
+
+        unsigned int gethoras() const; 
+        unsigned int getminutos() const; 
+        unsigned int getsegundos() const;
+
 
     private:
 
-        unsigned int hora{0};
+        unsigned int horas{0};
         unsigned int minutos{0};
         unsigned int segundos{0};
 

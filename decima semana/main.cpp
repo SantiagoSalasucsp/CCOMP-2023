@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
 
-    Time p(12,10,30);
+    Time p(12,10,61);
 
     cout<<p.toUniversalString();
 
