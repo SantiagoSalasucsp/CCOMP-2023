@@ -10,13 +10,14 @@
 using namespace std;
 
 
-CommissionEmployee::CommissionEmployee(string& firstName, string& lastName, string& socialSecurityNumber, double grossSales, double commissionRate )
+CommissionEmployee::CommissionEmployee(string& firstName, string& lastName, string& socialSecurityNumber, double grossSales, double commissionRate, double baseSalary )
 {
     this->firstName=firstName;
     this->lastName=lastName;
     this->socialSecurityNumber=socialSecurityNumber;
     this->grossSales=grossSales;
     this->commissionRate=commissionRate;
+    this->baseSalary=baseSalary;
 
 
 
@@ -81,6 +82,21 @@ throw invalid_argument("Commission rate must be > 0.0 and < 1.0");
 
 commissionRate = rate;
 } 
+
+
+
+double CommissionEmployee::getBaseSalary(){
+
+    return baseSalary;
+}
+
+void CommissionEmployee::setBaseSalary(double baseSalary){
+    if (baseSalary < 0.0) {
+        throw invalid_argument("Salary must be >= 0.0");
+    }
+    this->baseSalary=baseSalary;
+}
+
 
 
 
