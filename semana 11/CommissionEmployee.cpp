@@ -10,14 +10,14 @@
 using namespace std;
 
 
-CommissionEmployee::CommissionEmployee(string& firstName, string& lastName, string& socialSecurityNumber, double grossSales, double commissionRate, double baseSalary )
+CommissionEmployee::CommissionEmployee(const string& firstName, const string& lastName, const string& socialSecurityNumber, double grossSales, double commissionRate )
 {
     this->firstName=firstName;
     this->lastName=lastName;
     this->socialSecurityNumber=socialSecurityNumber;
     this->grossSales=grossSales;
     this->commissionRate=commissionRate;
-    this->baseSalary=baseSalary;
+
 
 
 
@@ -85,7 +85,7 @@ commissionRate = rate;
 
 
 
-double CommissionEmployee::getBaseSalary(){
+/*double CommissionEmployee::getBaseSalary(){
 
     return baseSalary;
 }
@@ -96,6 +96,25 @@ void CommissionEmployee::setBaseSalary(double baseSalary){
     }
     this->baseSalary=baseSalary;
 }
+*/
+
+
+//double CommissionEmployee::earnings(){
+    //return getCommissionRate()* getGrossSales();
+
+//}
+
+/*string CommissionEmployee::toString(){
+
+    ostringstream output;
+    output << fixed << setprecision(2); 
+    output << "commission employee: "<< getFirstName()<< ' ' <<getLastName()<< "\nsocial security number: " <<getSocialSecurityNumber()<< "\ngross sales: " <<getGrossSales()<< "\ncommission rate: " <<getCommissionRate() ;
+    return output.str();
+} 
+*/
+   
+
+
 
 
 

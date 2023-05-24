@@ -13,12 +13,12 @@ class CommissionEmployee{
 
     public:
 
-        CommissionEmployee(string&, string&, string&, double=0.0, double=0.0, double = 0.0);
+        CommissionEmployee(const string&, const string&, const string&, double=0.0, double=0.0);
 
         void setFirstName(string&);
         string getFirstName();
 
-        void setLastName(string&);
+        void setLastName( string&);
         string getLastName();
 
         void setSocialSgurityNumber(string &);
@@ -28,12 +28,15 @@ class CommissionEmployee{
         double getGrossSales();
 
         void setCommissionRate(double);
-        double getCommissionRate();
+        //double getCommissionRate();
 
 
 
-        void setBaseSalary(double);
-        double getBaseSalary(); 
+     
+
+
+        double earnings();
+        string toString();
 
 
 
@@ -44,7 +47,7 @@ class CommissionEmployee{
         string socialSecurityNumber;
         double grossSales;
         double commissionRate;
-        double baseSalary;
+        
 
 };
 
