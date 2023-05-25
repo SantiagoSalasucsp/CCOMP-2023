@@ -13,7 +13,8 @@ using namespace std;
 
 
 
-BasePlusCommissionEmployee::BasePlusCommissionEmployee(const string& fir, const string& last, const string& segu, double p, double x, double baseSalary):CommissionEmployee(fir,last,segu, p,x)
+BasePlusCommissionEmployee::BasePlusCommissionEmployee(const string& fir, const string& last, const string& segu, double p, double x, double baseSalary)
+:CommissionEmployee(fir,last,segu, p,x)
 {
    
     this->baseSalary=baseSalary;
