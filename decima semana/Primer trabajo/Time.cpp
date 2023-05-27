@@ -24,7 +24,7 @@ void Time::setTime(int horas,int minutos, int segundos){
         this->segundos=segundos;
     }
     else {
-        throw invalid_argument("La hora o el minuto o el segundo, esta fuera de rango");
+        throw invalid_argument("Ryto sapo");
     }
 
 
