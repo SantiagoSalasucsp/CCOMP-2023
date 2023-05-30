@@ -27,6 +27,8 @@ string Empleado::getSocialSecurityNumber() const {
     return socialSecurityNumber;
 }
 
+
+
 string Empleado::toString() const {
     return getFirstName() + " "s + getLastName() +
     "\nsocial security number: "s + getSocialSecurityNumber();
