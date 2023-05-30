@@ -76,6 +76,12 @@ void Time::setminutos(int minutos) {
  }
 
 
+ Time::~Time(){
+    
+ }
+ 
+
+
 
  unsigned int Time::gethoras() const {return horas;}
  unsigned Time::getminutos() const {return minutos;}
