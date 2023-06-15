@@ -1,5 +1,5 @@
 #ifdef DATE_H
-#define DATW_H
+#define DATE_H
 #include <iostream>
 #include <vector>
 #include <array>
